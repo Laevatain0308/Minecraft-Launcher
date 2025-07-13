@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="416.0" prefWidth="707.0" styleClass="main-pane" stylesheets="@../../css/DownloadProgress.css" xmlns="http://javafx.com/javafx/17.0.15" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.Laevatain0308.javaFX.scenes.downloadProgress.DownloadProgressController">
+   <children>
+      <Label fx:id="versionName" layoutX="28.0" layoutY="34.0" prefHeight="65.0" prefWidth="638.0" text="1.16.5-Test">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ListView fx:id="progressList" layoutX="20.0" layoutY="188.0" prefHeight="200.0" prefWidth="667.0" styleClass="progress-list" stylesheets="@../../css/DownloadProgress.css" />
+      <Pane fx:id="overButton" layoutX="31.0" layoutY="23.0" prefHeight="22.0" prefWidth="63.0" styleClass="over-button" stylesheets="@../../css/DownloadProgress.css">
+         <children>
+            <Label layoutY="9.0" text="返回" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

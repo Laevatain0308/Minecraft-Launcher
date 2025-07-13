@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600.0" prefWidth="900.0" styleClass="main-pane" stylesheets="@../../css/GlobalSettings.css" xmlns="http://javafx.com/javafx/17.0.15" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.Laevatain0308.javaFX.scenes.globalSettings.GlobalSettingsController">
+   <center>
+      <Pane prefHeight="213.0" prefWidth="900.0" styleClass="content" stylesheets="@../../css/GlobalSettings.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutY="15.0" prefHeight="428.0" prefWidth="175.0">
+               <children>
+                  <Pane fx:id="gameSettings" prefHeight="36.0" prefWidth="175.0" styleClass="left-list-item-selected" stylesheets="@../../css/GlobalSettings.css">
+                     <children>
+                        <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="16.0" layoutY="9.2" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../icon/设置_setting-two.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="46.0" layoutY="11.0" prefHeight="15.0" prefWidth="94.0" text="全局游戏设置" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="javaManager" layoutX="10.0" layoutY="10.0" prefHeight="36.0" prefWidth="175.0" styleClass="left-list-item-unselected" stylesheets="@../../css/GlobalSettings.css">
+                     <children>
+                        <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="16.0" layoutY="9.2" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../icon/保温杯_thermos-cup.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="47.0" layoutY="11.0" prefHeight="15.0" prefWidth="94.0" text="Java管理" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="41.0" prefWidth="175.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="17.0" text="启动器">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Line endX="100.0" layoutX="42.0" layoutY="32.0" startX="-26.79998779296875" startY="7.62939453125E-6" stroke="#0000004c" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="downloadSettings" layoutX="10.0" layoutY="46.0" prefHeight="36.0" prefWidth="175.0" styleClass="left-list-item-unselected" stylesheets="@../../css/GlobalSettings.css">
+                     <children>
+                        <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="16.0" layoutY="9.2" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../icon/下载_download.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="46.0" layoutY="11.0" prefHeight="15.0" prefWidth="94.0" text="下载" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <VBox fx:id="gameSettingsContent" layoutX="197.0" layoutY="15.0" prefHeight="533.0" prefWidth="687.0" visible="false">
+               <children>
+                  <Pane prefHeight="45.0" prefWidth="687.0" styleClass="first-item" stylesheets="@../../css/GlobalSettings.css">
+                     <children>
+                        <Label layoutX="13.0" layoutY="8.0" prefHeight="15.0" prefWidth="78.0" text="游戏Java" />
+                        <Label layoutX="13.0" layoutY="23.0" prefHeight="15.0" prefWidth="127.0" text="自动选择合适的Java" textFill="#0000005c">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="687.0" styleClass="second-item" stylesheets="@../../css/GlobalSettings.css">
+                     <children>
+                        <Label layoutX="14.0" layoutY="11.0" prefHeight="15.0" prefWidth="78.0" text="版本隔离" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="56.0" prefHeight="105.0" prefWidth="687.0" styleClass="third-item" stylesheets="@../../css/GlobalSettings.css">
+                     <children>
+                        <Label layoutX="14.0" layoutY="11.0" prefHeight="15.0" prefWidth="78.0" text="游戏内存" />
+                        <Label layoutX="14.0" layoutY="34.0" text="内存分配" textFill="#0000008a">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Slider fx:id="memorySlider" blockIncrement="0.0" layoutX="68.0" layoutY="27.0" majorTickUnit="2000.0" max="15607.0" prefHeight="32.0" prefWidth="521.0" styleClass="memory-slider" stylesheets="@../../css/GlobalSettings.css" />
+                        <TextField fx:id="memoryTextField" layoutX="597.0" layoutY="30.0" prefHeight="23.0" prefWidth="49.0">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="652.0" layoutY="34.0" text="MB" />
+                        <ProgressBar fx:id="downBar" layoutX="14.0" layoutY="70.0" prefHeight="10.0" prefWidth="659.0" progress="0.71" styleClass="down-bar" stylesheets="@../../css/GlobalSettings.css" />
+                        <ProgressBar fx:id="upBar" layoutX="14.0" layoutY="70.0" prefHeight="10.0" prefWidth="659.0" progress="0.41" styleClass="up-bar" stylesheets="@../../css/GlobalSettings.css" />
+                        <Label fx:id="memoryUsage" layoutX="15.0" layoutY="82.0" prefHeight="13.0" prefWidth="207.0" text="设备中已使用 11.3 GB / 设备总内存 15.2 GB" textFill="#0000005c">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="memoryAllocation" alignment="CENTER_RIGHT" layoutX="601.0" layoutY="82.0" prefHeight="13.0" prefWidth="72.0" text="游戏分配 3.6 GB" textFill="#0000005c">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Line fx:id="tipLine_memory" endX="87.0" layoutX="553.8" layoutY="55.0" startX="48.0" stroke="#f22323" />
+                        <Label fx:id="tipText_memory" layoutX="602.0" layoutY="53.0" prefHeight="13.0" prefWidth="37.0" text="必须为数字" textFill="#f22323">
+                           <font>
+                              <Font size="7.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="10.0" prefHeight="56.0" prefWidth="687.0" styleClass="forth-item" stylesheets="@../../css/GlobalSettings.css">
+                     <children>
+                        <Label layoutX="14.0" layoutY="21.0" prefHeight="15.0" prefWidth="92.0" text="游戏窗口分辨率" />
+                        <TextField fx:id="widthTextField" layoutX="486.0" layoutY="15.0" prefHeight="23.0" prefWidth="83.0" promptText="854" text="480" />
+                        <Label layoutX="575.0" layoutY="18.0" text="×" />
+                        <TextField fx:id="heightTextField" layoutX="590.0" layoutY="14.0" prefHeight="23.0" prefWidth="83.0" />
+                        <Line fx:id="tipLine_width" endX="87.0" layoutX="475.0" layoutY="40.0" startX="17.0" stroke="#f22323" />
+                        <Label fx:id="tipText_width" layoutX="491.0" layoutY="38.0" prefHeight="13.0" prefWidth="37.0" text="必须为数字" textFill="#f22323">
+                           <font>
+                              <Font size="7.0" />
+                           </font>
+                        </Label>
+                        <Line fx:id="tipLine_height" endX="87.0" layoutX="579.0" layoutY="40.0" startX="17.0" stroke="#f22323" />
+                        <Label fx:id="tipText_height" layoutX="595.0" layoutY="38.0" prefHeight="13.0" prefWidth="37.0" text="必须为数字" textFill="#f22323">
+                           <font>
+                              <Font size="7.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <VBox fx:id="javaManagerContent" layoutX="197.0" layoutY="15.0" prefHeight="537.0" prefWidth="687.0" visible="false">
+               <children>
+                  <Pane prefHeight="31.0" prefWidth="687.0" styleClass="java-manager" stylesheets="@../../css/GlobalSettings.css">
+                     <children>
+                        <HBox prefHeight="31.0" prefWidth="234.0">
+                           <children>
+                              <Pane fx:id="refresh" prefHeight="31.0" prefWidth="74.0" styleClass="refresh-button" stylesheets="@../../css/GlobalSettings.css">
+                                 <children>
+                                    <Label layoutX="25.0" layoutY="9.0" text="刷新" />
+                                 </children>
+                              </Pane>
+                              <Pane fx:id="addJava" layoutX="10.0" layoutY="10.0" prefHeight="31.0" prefWidth="94.0" styleClass="add-java-button" stylesheets="@../../css/GlobalSettings.css">
+                                 <children>
+                                    <Label layoutX="21.0" layoutY="9.0" text="添加 Java" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <ListView fx:id="javaList" focusTraversable="false" prefHeight="498.0" prefWidth="687.0" styleClass="java-list" stylesheets="@../../css/GlobalSettings.css" />
+               </children>
+            </VBox>
+            <VBox fx:id="downloadSettingsContent" layoutX="197.0" layoutY="15.0" prefHeight="537.0" prefWidth="687.0">
+               <children>
+                  <Pane prefHeight="63.0" prefWidth="687.0" styleClass="tip-pane" stylesheets="@../../css/GlobalSettings.css">
+                     <children>
+                        <Label layoutX="10.0" layoutY="7.0" prefHeight="15.0" prefWidth="36.0" text=" 提示" textFill="#000000a3">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="12.0" layoutY="25.0" prefHeight="30.0" prefWidth="664.0" text="线程数过高可能导致系统卡顿。你的下载速度会受到互联网运营商、下载源服务器等方面的影响，调高下载线程数不一定能大幅提升总下载速度。" wrapText="true" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="14.0" prefWidth="687.0" />
+                  <Pane fx:id="threadPane" prefHeight="87.0" prefWidth="687.0" styleClass="thread-pane" stylesheets="@../../css/GlobalSettings.css">
+                     <children>
+                        <Label fx:id="threadLabel" layoutX="20.0" layoutY="33.0" styleClass="thread-label" stylesheets="@../../css/GlobalSettings.css" text="下载线程数" />
+                        <Slider fx:id="threadSlider" layoutX="99.0" layoutY="34.0" max="256.0" prefHeight="14.0" prefWidth="476.0" styleClass="thread-slider" stylesheets="@../../css/GlobalSettings.css" />
+                        <TextField fx:id="threadTextField" layoutX="596.0" layoutY="30.0" prefHeight="23.0" prefWidth="61.0" />
+                        <Line fx:id="tipLine_thread" endX="87.0" layoutX="564.8" layoutY="55.0" startX="36.0" stroke="#f22323" />
+                        <Label fx:id="tipText_thread" layoutX="602.0" layoutY="53.0" prefHeight="13.0" prefWidth="37.0" text="必须为数字" textFill="#f22323">
+                           <font>
+                              <Font size="7.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="16.0" layoutY="50.0" prefHeight="15.0" prefWidth="83.0" text="（重启后生效）" textFill="#0000005c">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <Pane fx:id="titleBar" prefHeight="40.0" prefWidth="900.0" styleClass="title-bar" stylesheets="@../../css/TitleBar.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_RIGHT" layoutX="726.0" prefHeight="40.0" prefWidth="169.0">
+               <children>
+                  <Button fx:id="minimizeButton" layoutX="525.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="42.0" styleClass="min-button" stylesheets="@../../css/TitleBar.css" text="-" textFill="WHITE" />
+                  <Button fx:id="closeButton" layoutX="568.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="42.0" styleClass="close-button" stylesheets="@../../css/TitleBar.css" text="×" textFill="WHITE" />
+               </children>
+            </HBox>
+            <Pane fx:id="back" layoutX="10.0" layoutY="7.0" prefHeight="27.0" prefWidth="27.0" styleClass="left-button" stylesheets="@../../css/TitleBar.css">
+               <children>
+                  <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icon/返回_return_white.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="home" layoutX="45.0" layoutY="7.0" prefHeight="27.0" prefWidth="27.0" styleClass="left-button" stylesheets="@../../css/TitleBar.css">
+               <children>
+                  <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icon/首页_home_white.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label layoutX="87.0" layoutY="10.0" prefHeight="21.0" prefWidth="273.0" text="设置" textFill="#ffffffdf">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

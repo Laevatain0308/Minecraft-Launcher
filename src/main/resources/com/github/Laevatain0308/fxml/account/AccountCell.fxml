@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/17.0.15" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.Laevatain0308.javaFX.scenes.accountScene.AccountCellController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="28.0" layoutX="17.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" width="28.0" />
+      <HBox alignment="CENTER_LEFT" layoutX="57.0" layoutY="8.0" spacing="9.0">
+         <children>
+            <Label fx:id="name" text="Laevatain" />
+            <Label fx:id="tip" alignment="CENTER" prefHeight="13.0" prefWidth="40.0" style="-fx-background-color: rgba(93, 162, 234, 0.15); -fx-text-fill: rgba(57, 108, 221, 0.91);" stylesheets="@../../css/DownloadScene.css" text="当前帐号" textFill="WHITE">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label fx:id="loadType" layoutX="57.0" layoutY="23.0" text="离线账户" textFill="#0000005c">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <Pane fx:id="deleteUser" layoutX="608.0" layoutY="9.0" prefHeight="28.0" prefWidth="28.0" styleClass="option-button" stylesheets="@../../css/Button.css">
+         <children>
+            <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="4.2" layoutY="4.3" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icon/删除_delete.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="chooseUser" layoutX="642.0" layoutY="9.0" prefHeight="28.0" prefWidth="28.0" styleClass="option-button" stylesheets="@../../css/Button.css">
+         <children>
+            <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="4.5" layoutY="4.5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icon/播放_play.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</Pane>

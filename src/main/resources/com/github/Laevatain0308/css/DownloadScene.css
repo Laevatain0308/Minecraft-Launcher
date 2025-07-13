@@ -1,0 +1,177 @@
+﻿.test
+{
+
+}
+
+
+.main-pane
+{
+    -fx-background-radius: 12px 12px 10px 10px;
+}
+
+.content
+{
+    -fx-background-color: rgba(178, 178, 178, 0.32);
+    -fx-background-radius: 0 0 10px 10px;
+}
+
+
+.left-list-item
+{
+    -fx-background-color: rgba(255, 255, 255, 0.75);
+    -fx-background-radius: 0 10px 10px 0;
+}
+
+.left-list-item:hover
+{
+    -fx-background-color: rgba(255, 255, 255, 0.47);
+}
+
+
+.bmcl-tip
+{
+    -fx-background-color: rgba(79, 124, 214, 0.81);
+    -fx-background-radius: 10px;
+}
+
+
+.version-select .box
+{
+    -fx-border-width: 0.7;
+    -fx-border-radius: 2px;
+    -fx-border-color: black;
+    -fx-background-color: white;
+    -fx-padding: 1.8;
+}
+
+.version-select .box .mark
+{
+    -fx-background-color: white;
+}
+
+.version-select .box:hover
+{
+    -fx-background-color: rgba(79, 124, 214, 0.34);
+}
+
+.version-select:selected .box
+{
+    -fx-border-color: rgba(79, 124, 214, 0.81);
+    -fx-background-color: rgba(79, 124, 214, 0.81);
+}
+
+
+.version-search
+{
+    -fx-background-color: white;
+    -fx-background-radius: 10px 10px 0 0;
+    -fx-border-width: 0 0 0.5 0;
+    -fx-border-color: rgba(0, 0, 0, 0.16);
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 1);
+}
+
+
+.search-pane
+{
+    -fx-background-color: white;
+    -fx-background-radius: 0 10px 0 0;
+}
+
+.text-field
+{
+    -fx-background-color: rgba(220, 220, 235, 0.62);
+}
+
+.over-search-button
+{
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+}
+
+.over-search-button:hover
+{
+    -fx-background-color: rgb(243, 243, 243);
+}
+
+.over-search-button:pressed
+{
+    -fx-background-color: rgb(232, 232, 232);
+}
+
+
+.search-button
+{
+    -fx-background-color: transparent;
+}
+
+.search-button:hover
+{
+    -fx-background-color: rgb(243, 243, 243);
+}
+
+.search-button:pressed
+{
+    -fx-background-color: rgb(232, 232, 232);
+}
+
+
+.refresh-button
+{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0 10px 0 0;
+}
+
+.refresh-button:hover
+{
+    -fx-background-color: rgb(243, 243, 243);
+}
+
+.refresh-button:pressed
+{
+    -fx-background-color: rgb(232, 232, 232);
+}
+
+
+.version-list
+{
+    -fx-background-color: white;
+    -fx-background-radius: 0 0 10px 10px;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 1);
+}
+
+.version-list .scroll-bar:vertical , .version-list .scroll-bar:horizontal
+{
+    -fx-opacity: 0;
+    -fx-pref-width: 0;
+}
+
+
+.version-list .list-cell
+{
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+}
+
+.version-list .list-cell:filled
+{
+    -fx-border-width: 0 0 0.5 0;
+    -fx-border-color: rgba(0, 0, 0, 0.16);
+}
+
+.version-list .list-cell:filled:hover
+{
+    -fx-background-color: rgb(243, 243, 243);
+}
+
+.version-list .list-cell:filled:pressed
+{
+    -fx-background-color: rgb(232, 232, 232);
+}
+
+.version-list .list-cell .type
+{
+    -fx-background-color: rgba(93, 162, 234, 0.15);
+    -fx-text-fill: rgba(57, 108, 221, 0.91);
+}

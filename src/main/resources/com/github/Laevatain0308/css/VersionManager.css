@@ -1,0 +1,276 @@
+﻿.test
+{
+
+}
+
+
+.main-pane
+{
+    -fx-background-radius: 12px 12px 10px 10px;
+}
+
+.content
+{
+    -fx-background-color: rgba(178, 178, 178, 0.32);
+    -fx-background-radius: 0 0 10px 10px;
+}
+
+
+/*----- Left List -----*/
+.left-list-item-unselected
+{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0 10px 10px 0;
+}
+
+.left-list-item-unselected:hover
+{
+    -fx-background-color: rgba(152, 152, 152, 0.2);
+}
+
+.left-list-item-unselected:pressed
+{
+    -fx-background-color: rgba(152, 152, 152, 0.5);
+}
+
+
+.left-list-item-selected
+{
+    -fx-background-color: rgba(255, 255, 255, 0.75);
+    -fx-background-radius: 0 10px 10px 0;
+}
+
+.left-list-item-selected:hover
+{
+    -fx-background-color: rgba(255, 255, 255, 0.54);
+}
+
+
+/*----- Check Box -----*/
+.check-box .box
+{
+    -fx-border-width: 0.7;
+    -fx-border-radius: 2px;
+    -fx-border-color: black;
+    -fx-background-color: white;
+    -fx-padding: 1.8;
+}
+
+.check-box .box .mark
+{
+    -fx-background-color: white;
+}
+
+.check-box .box:hover
+{
+    -fx-background-color: rgba(79, 124, 214, 0.34);
+}
+
+.check-box:selected .box
+{
+    -fx-border-color: rgba(79, 124, 214, 0.81);
+    -fx-background-color: rgba(79, 124, 214, 0.81);
+}
+
+
+/*----- Global Settings Button -----*/
+.global-settings-button
+{
+    -fx-background-color: rgba(79, 124, 214, 0.81);
+}
+
+.global-settings-button:hover
+{
+    -fx-background-color: rgba(63, 115, 214, 0.81);
+}
+
+.global-settings-button:pressed
+{
+    -fx-background-color: rgba(51, 102, 200, 0.81);
+}
+
+
+/*----- Game Settings -----*/
+.first-item
+{
+    -fx-background-color: white;
+    -fx-background-radius: 10px 10px 0 0;
+    -fx-border-width: 0 0 0.5 0;
+    -fx-border-color: rgba(0, 0, 0, 0.16);
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 1);
+}
+
+.first-item:hover
+{
+    -fx-background-color: rgb(243, 243, 243);
+}
+
+.second-item
+{
+    -fx-background-color: white;
+    -fx-border-width: 0 0 0.5 0;
+    -fx-border-color: rgba(0, 0, 0, 0.16);
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 1);
+}
+
+.second-item:hover
+{
+    -fx-background-color: rgb(243, 243, 243);
+}
+
+.third-item
+{
+    -fx-background-color: white;
+    -fx-border-width: 0 0 0.5 0;
+    -fx-border-color: rgba(0, 0, 0, 0.16);
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 1);
+}
+
+.forth-item
+{
+    -fx-background-color: white;
+    -fx-background-radius: 0 0 10px 10px;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 1);
+}
+
+
+.text-field
+{
+    -fx-background-color: rgba(220, 224, 235, 0.62);
+}
+
+
+/*----- Slider -----*/
+.memory-slider .track
+{
+    /*-fx-background-color: linear-gradient(to right , rgba(220, 224, 235, 0.45), rgba(123, 153, 246, 0.96) 30% , rgba(220, 224, 235, 0.45));*/
+    -fx-background-color: -slider-track-color;
+    -fx-background-insets: 0 0 -1 0 , 0 , 1;
+}
+
+.memory-slider .thumb
+{
+    -fx-background-color: rgb(88, 122, 228);
+    -fx-cursor: hand;
+}
+
+.memory-slider .thumb:pressed
+{
+    -fx-background-color: rgb(76, 107, 205);
+    -fx-cursor: default;
+}
+
+
+/*----- Progress Bar -----*/
+.up-bar .track
+{
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.up-bar .bar
+{
+    -fx-background-color: rgba(66, 106, 223, 0.75);
+}
+
+.up-bar:indeterminate .bar
+{
+    -fx-background-color: linear-gradient(to left , transparent , black);
+}
+
+
+.down-bar .track
+{
+    -fx-background-color: rgba(203, 203, 203, 0.36);
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.down-bar .bar
+{
+    -fx-background-color: rgba(147, 165, 221, 0.76);
+}
+
+.down-bar:indeterminate .bar
+{
+    -fx-background-color: linear-gradient(to left , transparent , black);
+}
+
+
+/*----- Save List -----*/
+.saves-header
+{
+    -fx-background-color: white;
+    -fx-background-radius: 10px 10px 0 0;
+    -fx-border-width: 0 0 0.5 0;
+    -fx-border-color: rgba(0, 0, 0, 0.16);;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 1);
+}
+
+
+.refresh-save-list
+{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px 5px 5px 0;
+}
+
+.refresh-save-list:hover
+{
+    -fx-background-color: rgb(243, 243, 243);
+}
+
+.refresh-save-list:pressed
+{
+    -fx-background-color: rgb(232, 232, 232);
+}
+
+
+.save-list
+{
+    -fx-background-color: white;
+    -fx-background-radius: 0 0 10px 10px;
+    -fx-padding: 0;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 1);
+}
+
+.save-list .scroll-bar:horizontal , .save-list .scroll-bar:vertical
+{
+    -fx-opacity: 0;
+    -fx-pref-width: 0;
+}
+
+
+.save-list .list-cell
+{
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+.save-list .list-cell:filled
+{
+    -fx-border-width: 0 0 0.5 0;
+    -fx-border-color: rgba(0, 0, 0, 0.16);
+}
+
+.save-list .list-cell:empty
+{
+    -fx-border-width: 0;
+}
+
+.save-list .list-cell:filled:hover
+{
+    -fx-background-color: rgb(243, 243, 243);
+}
+
+.save-list .list-cell:filled:pressed
+{
+    -fx-background-color: rgb(232, 232, 232);
+}

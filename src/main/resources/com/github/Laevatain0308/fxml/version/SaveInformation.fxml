@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600.0" prefWidth="900.0" styleClass="main-pane" stylesheets="@../../css/SaveInformation.css" xmlns="http://javafx.com/javafx/17.0.15" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.Laevatain0308.javaFX.scenes.saveInformation.SaveInformationController">
+   <center>
+      <ScrollPane focusTraversable="false" hbarPolicy="NEVER" hmax="0.0" stylesheets="@../../css/SaveInformation.css" BorderPane.alignment="CENTER">
+         <content>
+            <Pane prefHeight="692.0" prefWidth="900.0" styleClass="content" stylesheets="@../../css/SaveInformation.css">
+               <children>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="669.0" prefWidth="880.0">
+                     <children>
+                        <Pane prefHeight="28.0" prefWidth="880.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="7.0" text="基本信息">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="35.0" prefWidth="880.0" styleClass="first-pane" stylesheets="@../../css/SaveInformation.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="11.0" text="世界名称" />
+                              <Label fx:id="levelName" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="458.0" layoutY="11.0" prefHeight="15.0" prefWidth="407.0" text="Yuushya方块小镇" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="42.0" prefHeight="35.0" prefWidth="880.0" styleClass="middle-pane" stylesheets="@../../css/SaveInformation.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="11.0" text="游戏版本" />
+                              <Label fx:id="gameVersion" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="458.0" layoutY="11.0" prefHeight="15.0" prefWidth="407.0" text="1.16.5" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="77.0" prefHeight="35.0" prefWidth="880.0" styleClass="middle-pane" stylesheets="@../../css/SaveInformation.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="11.0" text="种子" />
+                              <Label fx:id="seed" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="458.0" layoutY="11.0" prefHeight="15.0" prefWidth="407.0" text="5032265648637874224" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="112.0" prefHeight="35.0" prefWidth="880.0" styleClass="middle-pane" stylesheets="@../../css/SaveInformation.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="11.0" text="上一次游戏时间" />
+                              <Label fx:id="lastPlayedDate" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="458.0" layoutY="11.0" prefHeight="15.0" prefWidth="407.0" text="2023 年 08 月 29 日 22:10:27" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="148.0" prefHeight="35.0" prefWidth="880.0" styleClass="middle-pane" stylesheets="@../../css/SaveInformation.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="11.0" text="游戏内时间" />
+                              <Label fx:id="gameTime" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="458.0" layoutY="11.0" prefHeight="15.0" prefWidth="407.0" text="26 天" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="183.0" prefHeight="43.0" prefWidth="880.0" styleClass="middle-pane" stylesheets="@../../css/SaveInformation.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="允许命令（作弊）" />
+                              <Slider fx:id="commandToggle" layoutX="834.0" layoutY="14.0" minHeight="0.0" minWidth="0.0" mouseTransparent="true" prefHeight="16.0" prefWidth="32.0" styleClass="slider-active" stylesheets="@../../css/SaveInformation.css" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="218.0" prefHeight="43.0" prefWidth="880.0" styleClass="middle-pane" stylesheets="@../../css/SaveInformation.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="生成建筑" />
+                              <Slider fx:id="buildingToggle" layoutX="834.0" layoutY="14.0" minHeight="0.0" minWidth="0.0" mouseTransparent="true" prefHeight="16.0" prefWidth="32.0" styleClass="slider-active" stylesheets="@../../css/SaveInformation.css" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="261.0" prefHeight="43.0" prefWidth="880.0" styleClass="last-pane" stylesheets="@../../css/SaveInformation.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="难度" />
+                              <TextField fx:id="difficultyTextField" editable="false" layoutX="812.0" layoutY="10.0" mouseTransparent="true" prefHeight="23.0" prefWidth="54.0" stylesheets="@../../css/SaveInformation.css" text="和平" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="880.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="21.0" text="玩家信息">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="42.0" prefHeight="35.0" prefWidth="880.0" styleClass="first-pane" stylesheets="@../../css/SaveInformation.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="11.0" text="位置" />
+                              <Label fx:id="playerPos" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="458.0" layoutY="11.0" prefHeight="15.0" prefWidth="407.0" text="(10.09, 16.03, -4.22)" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="386.0" prefHeight="35.0" prefWidth="880.0" styleClass="middle-pane" stylesheets="@../../css/SaveInformation.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="11.0" text="上次死亡位置" />
+                              <Label fx:id="lastDeathPos" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="458.0" layoutY="11.0" prefHeight="15.0" prefWidth="407.0" text="(10.09, 16.03, -4.22)" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="421.0" prefHeight="35.0" prefWidth="880.0" styleClass="middle-pane" stylesheets="@../../css/SaveInformation.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="11.0" text="床/重生锚位置" />
+                              <Label fx:id="respawnPos" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="458.0" layoutY="11.0" prefHeight="15.0" prefWidth="407.0" text="(-48, 11, -46)" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="300.0" prefHeight="43.0" prefWidth="880.0" styleClass="middle-pane" stylesheets="@../../css/SaveInformation.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="游戏模式" />
+                              <TextField fx:id="gameTypeTextField" editable="false" layoutX="801.0" layoutY="10.0" mouseTransparent="true" prefHeight="23.0" prefWidth="65.0" stylesheets="@../../css/SaveInformation.css" text="旁观者" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="492.0" prefHeight="43.0" prefWidth="880.0" styleClass="middle-pane" stylesheets="@../../css/SaveInformation.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="生命值" />
+                              <TextField fx:id="healthTextField" editable="false" layoutX="821.0" layoutY="10.0" mouseTransparent="true" prefHeight="23.0" prefWidth="45.0" stylesheets="@../../css/SaveInformation.css" text="20" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="535.0" prefHeight="43.0" prefWidth="880.0" styleClass="middle-pane" stylesheets="@../../css/SaveInformation.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="饥饿值" />
+                              <TextField fx:id="foodLevelTextField" editable="false" layoutX="821.0" layoutY="10.0" mouseTransparent="true" prefHeight="23.0" prefWidth="45.0" stylesheets="@../../css/SaveInformation.css" text="20" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="578.0" prefHeight="43.0" prefWidth="880.0" styleClass="last-pane" stylesheets="@../../css/SaveInformation.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="经验等级" />
+                              <TextField editable="false" layoutX="821.0" layoutY="10.0" mouseTransparent="true" prefHeight="23.0" prefWidth="45.0" stylesheets="@../../css/SaveInformation.css" text="0" fx:id="xpLevelTextField" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+   </center>
+   <top>
+      <Pane fx:id="titleBar" prefHeight="40.0" prefWidth="900.0" styleClass="title-bar" stylesheets="@../../css/TitleBar.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_RIGHT" layoutX="726.0" prefHeight="40.0" prefWidth="169.0">
+               <children>
+                  <Button fx:id="minimizeButton" layoutX="525.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="42.0" styleClass="min-button" stylesheets="@../../css/TitleBar.css" text="-" textFill="WHITE" />
+                  <Button fx:id="closeButton" layoutX="568.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="42.0" styleClass="close-button" stylesheets="@../../css/TitleBar.css" text="×" textFill="WHITE" />
+               </children>
+            </HBox>
+            <Pane fx:id="back" layoutX="10.0" layoutY="7.0" prefHeight="27.0" prefWidth="27.0" styleClass="left-button" stylesheets="@../../css/TitleBar.css">
+               <children>
+                  <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icon/返回_return_white.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="home" layoutX="45.0" layoutY="7.0" prefHeight="27.0" prefWidth="27.0" styleClass="left-button" stylesheets="@../../css/TitleBar.css">
+               <children>
+                  <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icon/首页_home_white.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label fx:id="header" layoutX="87.0" layoutY="10.0" prefHeight="21.0" prefWidth="273.0" text="版本管理" textFill="#ffffffdf">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

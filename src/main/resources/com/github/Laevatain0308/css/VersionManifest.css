@@ -1,0 +1,129 @@
+﻿.test
+{
+
+}
+
+
+/*===== 主界面 =====*/
+.main-pane
+{
+    -fx-background-radius: 12px 12px 10px 10px;
+}
+
+.content
+{
+    -fx-background-color: rgba(178, 178, 178, 0.32);
+    -fx-background-radius: 0 0 10px 10px;
+}
+
+
+/*===== 侧边栏 =====*/
+.repository-list
+{
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+}
+
+.repository-list .scroll-bar:horizontal , .repository-list .scroll-bar:vertical
+{
+    -fx-opacity: 0;
+    -fx-pref-width: 0;
+}
+
+.repository-list .list-cell
+{
+    -fx-padding: 0px;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-border-width: 0;
+    -fx-background-radius: 0 10px 10px 0;
+}
+
+.repository-list .list-cell:filled:hover
+{
+    -fx-background-color: rgba(152, 152, 152, 0.2);
+}
+
+.repository-list .list-cell:filled:pressed
+{
+    -fx-background-color: rgba(152, 152, 152, 0.5);
+}
+
+.repository-list .list-cell:filled:selected
+{
+    -fx-background-color: rgba(255, 255, 255, 0.75);
+}
+
+.repository-list .list-cell:filled:selected:hover
+{
+    -fx-background-color: rgba(255, 255, 255, 0.47);
+}
+
+.repository-list .list-cell:filled:selected,.list-cell:filled .repository-name
+{
+    -fx-text-fill: #000000;
+}
+
+.repository-list .list-cell:filled .remove:pressed
+{
+    -fx-fill: rgba(152, 152, 152, 0.32);
+}
+
+
+.left-button
+{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0 10px 10px 0;
+}
+
+.left-button:hover
+{
+    -fx-background-color: rgba(152, 152, 152, 0.2);
+}
+
+.left-button:pressed
+{
+    -fx-background-color: rgba(152, 152, 152, 0.5);
+}
+
+
+/*===== 版本列表 =====*/
+.version-list
+{
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-background-color: white;
+    /*-fx-background-radius: 10px;*/
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 1);
+}
+
+.version-list .scroll-bar:horizontal , .version-list .scroll-bar:vertical
+{
+    -fx-opacity: 0;
+    -fx-pref-width: 0;
+}
+
+.version-list .list-cell
+{
+    -fx-padding: 0px;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-border-width: 0 0 0.5 0;
+    -fx-border-color: rgba(0, 0, 0, 0.13);
+}
+
+.version-list .list-cell:empty
+{
+    -fx-border-width: 0;
+}
+
+.version-list .list-cell:filled:hover
+{
+    -fx-background-color: rgb(243, 243, 243);
+}
+
+.version-list .list-cell:filled:pressed
+{
+    -fx-background-color: rgb(232, 232, 232);
+}

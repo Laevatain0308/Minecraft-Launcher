@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="root" prefHeight="45.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/17.0.15" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.Laevatain0308.javaFX.scenes.downloadScene.DownloadCellController">
+   <children>
+      <ImageView fx:id="icon" fitHeight="28.0" fitWidth="28.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../icon/grass.png" />
+         </image>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="17.24" offsetX="1.0" offsetY="1.0" radius="8.065" spread="0.43" width="17.02">
+               <color>
+                  <Color red="0.6200000047683716" green="0.6200000047683716" blue="0.6200000047683716" opacity="0.32401812076568604" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <Label fx:id="type" alignment="CENTER" layoutX="55.0" layoutY="10.0" prefHeight="15.0" prefWidth="37.0" style="-fx-background-color: rgba(93, 162, 234, 0.15); -fx-text-fill: rgba(57, 108, 221, 0.91);" stylesheets="@../../css/DownloadScene.css" text="正式版" textFill="WHITE">
+         <font>
+            <Font size="9.0" />
+         </font></Label>
+      <Label fx:id="versionID" layoutX="99.0" layoutY="10.0" prefHeight="15.0" prefWidth="208.0" text="1.21.5" />
+      <Label fx:id="releaseTime" layoutX="55.0" layoutY="25.0" prefHeight="15.0" prefWidth="216.0" text="2025 年 03 月 25 日 20:14:58" textFill="#0000005c">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <Pane fx:id="wiki" layoutX="644.0" layoutY="7.0" prefHeight="32.0" prefWidth="32.0" styleClass="option-button" stylesheets="@../../css/Button.css">
+         <children>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="6.0" layoutY="6.3" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icon/浏览器_browser-chrome.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</Pane>

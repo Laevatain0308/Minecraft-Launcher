@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/17.0.15" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.Laevatain0308.javaFX.scenes.versionManager.SaveDataCellController">
+   <children>
+      <ImageView fx:id="icon" fitHeight="24.0" fitWidth="24.0" layoutX="11.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+      <HBox alignment="CENTER_LEFT" layoutX="48.0" layoutY="5.0" prefHeight="18.0" prefWidth="382.0">
+         <children>
+            <Label fx:id="name" prefHeight="18.0" text="区块生存">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="18.0" prefWidth="58.0">
+               <children>
+                  <Label fx:id="versionID" alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="3.2" prefHeight="12.0" style="-fx-background-color: rgba(93, 162, 234, 0.15); -fx-text-fill: rgba(57, 108, 221, 0.91);" text="1.16.5">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <Label fx:id="lastPlayDate" layoutX="48.0" layoutY="23.0" prefHeight="15.0" prefWidth="271.0" text="上一次游戏时间：2023 年 08 月 29 日 22:10:27" textFill="#0000005c">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <Pane fx:id="openFile" layoutX="608.0" layoutY="6.0" prefHeight="32.0" prefWidth="32.0" styleClass="option-button" stylesheets="@../../css/Button.css">
+         <children>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="6.0" layoutY="6.3" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icon/文件夹-关_folder-close.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="moreInformation" layoutX="644.0" layoutY="6.0" prefHeight="32.0" prefWidth="32.0" styleClass="option-button" stylesheets="@../../css/Button.css">
+         <children>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="6.0" layoutY="6.3" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icon/更多1_more-one.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</Pane>

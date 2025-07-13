@@ -1,0 +1,80 @@
+﻿.test
+{
+
+}
+
+
+.main-pane
+{
+    -fx-background-color: white;
+}
+
+
+.over-button
+{
+    -fx-background-color: transparent;
+}
+.over-button .label
+{
+    -fx-text-fill: #f13d3d;
+}
+
+.over-button:hover
+{
+    -fx-background-color: #f13d3d;
+}
+.over-button:hover .label
+{
+    -fx-text-fill: white;
+}
+
+.over-button:pressed
+{
+    -fx-background-color: #cd3434;
+}
+
+
+.progress-list
+{
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+}
+
+.progress-list .scroll-bar:horizontal , .progress-list .scroll-bar:vertical
+{
+    -fx-opacity: 0;
+    -fx-pref-width: 0;
+}
+
+.progress-list .list-cell
+{
+    -fx-padding: 0px;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-border-width: 0 0 0.5 0;
+    -fx-border-color: rgba(0, 0, 0, 0.16);
+}
+
+.progress-list .list-cell:empty
+{
+    -fx-border-width: 0;
+}
+
+
+.progress-bar .track
+{
+    -fx-background-color: rgba(203, 203, 203, 0.36);
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.progress-bar .bar
+{
+    -fx-background-color: rgba(66, 106, 223, 0.75)
+}
+
+.progress-bar:indeterminate .bar
+{
+    -fx-background-color: linear-gradient(to left , transparent , rgba(66, 106, 223, 0.75));
+}

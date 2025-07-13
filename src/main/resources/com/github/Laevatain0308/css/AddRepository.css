@@ -1,0 +1,57 @@
+﻿.test
+{
+
+}
+
+
+.main-pane
+{
+    -fx-background-color: rgb(211, 211, 211);
+    -fx-background-radius: 12px 12px 10px 10px;
+}
+
+
+.name-pane
+{
+    -fx-background-color: white;
+    -fx-background-radius: 10px 10px 0 0;
+    -fx-border-width: 0 0 0.5 0;
+    -fx-border-color: rgba(0, 0, 0, 0.36);
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 1);
+}
+
+.path-pane
+{
+    -fx-background-color: white;
+    -fx-background-radius: 0 0 10px 10px;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 1);
+}
+
+
+.save-button
+{
+    -fx-background-color: #5d6ce4;
+}
+
+.save-button:hover
+{
+    -fx-background-color: #525fca;
+}
+
+.save-button:pressed
+{
+    -fx-background-color: #4e59b9;
+}
+
+.save-button:disabled
+{
+    -fx-background-color: rgba(93, 108, 228, 0.81);
+}
+
+
+.text-field
+{
+    -fx-background-color: rgba(220, 220, 235, 0.62);
+}

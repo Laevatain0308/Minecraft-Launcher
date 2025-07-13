@@ -1,0 +1,89 @@
+﻿.test
+{
+
+}
+
+
+.main-pane
+{
+    -fx-background-radius: 12px 12px 10px 10px;
+}
+
+.content
+{
+    -fx-background-color: rgba(178, 178, 178, 0.32);
+    -fx-background-radius: 0 0 10px 10px;
+}
+
+
+.left-list-item
+{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0 10px 10px 0;
+}
+
+.left-list-item:hover
+{
+    -fx-background-color: rgba(152, 152, 152, 0.2);
+}
+
+.left-list-item:pressed
+{
+    -fx-background-color: rgba(152, 152, 152, 0.5);
+}
+
+
+
+.list-view
+{
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+
+.list-view .scroll-bar:horizontal , .list-view .scroll-bar:vertical
+{
+    -fx-opacity: 0;
+    -fx-pref-width: 0;
+}
+
+
+.list-view .list-cell
+{
+    /*-fx-padding: 0;*/
+    /*-fx-background-insets: 0;*/
+    -fx-background-radius: 10px;
+
+    -fx-padding: 0 0 10px 0;
+    -fx-background-insets: 0 0 10px 0;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 5, 0, 0, 1);
+}
+
+.list-view .list-cell:filled
+{
+    -fx-background-color: white;
+    -fx-cursor: hand;
+}
+
+.list-view .list-cell:empty
+{
+    -fx-background-color: transparent;
+}
+
+
+.option-button
+{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+}
+
+.option-button:hover
+{
+    -fx-background-color: rgba(152, 152, 152, 0.2);
+}
+
+.option-button:pressed
+{
+    -fx-background-color: rgba(152, 152, 152, 0.5);
+}

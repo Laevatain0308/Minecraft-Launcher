@@ -1,0 +1,74 @@
+﻿.test
+{
+
+}
+
+
+/*===== 标题栏 =====*/
+.title-bar
+{
+    -fx-background-color: #075CA1;
+    -fx-background-radius: 10px 10px 0 0;
+}
+
+
+/*===== 最小化 =====*/
+.min-button
+{
+    -fx-background-color: #075ca1;
+    -fx-background-radius: 10px;
+    -fx-text-fill: white;
+}
+
+.min-button:hover
+{
+    -fx-background-color: #06518d;
+    -fx-cursor: hand;
+}
+
+.min-button:pressed
+{
+    -fx-background-color: #043f6d;
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 1);
+}
+
+
+/*===== 关闭 =====*/
+.close-button
+{
+    -fx-background-color: #075ca1;
+    -fx-background-radius: 10px;
+    -fx-text-fill: white;
+}
+
+.close-button:hover
+{
+    -fx-background-color: #c60707;
+    -fx-cursor: hand;
+}
+
+.close-button:pressed
+{
+    -fx-background-color: #a40505;
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 1);
+}
+
+
+
+.left-button
+{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+}
+
+.left-button:hover
+{
+    -fx-background-color: #06518d;
+}
+
+.left-button:pressed
+{
+    -fx-background-color: rgba(152, 152, 152, 0.5);
+    -fx-background-color: #043f6d;
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 1);
+}

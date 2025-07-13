@@ -1,0 +1,64 @@
+﻿.test
+{
+
+}
+
+
+/*===== 主界面 =====*/
+.main-pane
+{
+    -fx-background-radius: 12px 12px 10px 10px;
+}
+
+
+/*===== 侧边栏 =====*/
+.left-list
+{
+    -fx-background-color: rgba(112, 112, 112, 0.2);
+    -fx-background-radius: 0 0 0 10px;
+}
+
+.left-list-item
+{
+    -fx-background-color: transparent;
+}
+
+.left-list-item:hover
+{
+    -fx-background-color: rgba(152, 152, 152, 0.2);
+}
+
+.left-list-item:pressed
+{
+    -fx-background-color: rgba(152, 152, 152, 0.5);
+}
+
+
+/*===== 启动游戏 =====*/
+.start-button
+{
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 1);
+}
+
+.start-button:hover
+{
+    -fx-background-color: #45a049;
+    -fx-cursor: hand;
+}
+
+.start-button:pressed
+{
+    -fx-background-color: #3e8e41;
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 1);
+}
+
+.start-button:disabled
+{
+    -fx-opacity: 0.6;
+    -fx-background-color: #cccccc;
+}
